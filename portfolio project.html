@@ -1,0 +1,298 @@
+<html>
+<head>
+<title> PREM KUMAR- Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+
+ body{ 
+   /* background-image: url("https://images.pexels.com/photos/7130473/pexels-photo-7130473.jpeg");  */
+  padding:20px;
+  display:flex;
+  justify-content:center} 
+
+
+.resume{max-width:900px;
+  width:100%;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,0.1);
+  display:flex}
+
+
+.left{width:34%;
+  background:linear-gradient(180deg,#D16BA5,#86A8E7,#5FFBF1);
+  color:#fff;
+  padding:35px 28px}
+
+
+ .pic{width:190px;
+  height:250px;
+  border-radius:50%;
+  overflow:hidden;
+  margin-bottom:20px;
+  border:4px solid #c953c9f0;
+  animation: float 3s ease-in-out infinite, glow 2.5s ease-in-out infinite; transition:.4s}
+
+.pic:hover{transform:scale(1.08)
+   rotate(10deg); 
+   border-color:#c0dc06}
+
+.pic:hover img{transform:scale(1.15)}
+
+ .pic img{width:100%;
+  height:100%;
+  object-fit:cover;
+   transition:.6s}   
+
+
+.left h2{font-size:22px;
+  letter-spacing:1px;
+  margin-bottom:6px}
+
+.name{
+  animation: nameAnimation 3s infinite alternate;
+}
+
+@keyframes nameAnimation {
+  0% { color: #15d936; }
+  50% { color: #e514add5; }
+  100% { color: yellow; }
+}
+
+
+
+.left .role{font-size:12px;
+  color:black;
+  letter-spacing:2px;
+  margin-bottom:25px}
+
+  /* .role{
+  animation: roleAnimation 3s infinite alternate;
+
+}
+@keyframes roleAnimation {
+  0% { color: #000000; }
+  50% { color: #ff0000; }
+  100% { color: #000000; }}  */
+
+
+.contact{margin-top:20px}
+
+.contact div{margin-bottom:12px;
+  font-size:13px;
+  color:rgb(66, 9, 236);
+  display:flex;
+  gap:10px;
+  align-items:center}
+
+
+.contact i{color:rgb(224, 54, 8);width:18px}
+
+
+.skills-left{margin-top:30px}
+
+.skills-left h4{font-size:12px;
+  letter-spacing:2px;
+  color:black;
+  margin-bottom:12px;
+ animation:  fadeUp .6s ease 1.3s both}
+
+.skill-bar{background:#1e293b;
+  height:6px;
+  border-radius:10px;
+  margin:8px 0 14px;
+  overflow:hidden}
+
+
+.skill-fill{height:100%;
+  background:lightcyan;
+  border-radius:10px;
+   width:0;
+  animation: fillBar 1.5s ease forwards}
+
+  .skill-fill.w90{--w:90%; animation-delay:1.5s} 
+.skill-fill.w85{--w:85%; animation-delay:1.7s} 
+.skill-fill.w80{--w:80%; animation-delay:1.9s}
+
+@keyframes fillBar{from{width:0} to{width:var(--w)}}
+
+
+.right{width:66%;padding:35px}
+
+.tag{background:black;color:whitesmoke;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1px}
+
+
+.right h3{font-size:16px;
+  margin:18px 0 10px;
+  display:flex;
+  align-items:center;
+  gap:10px}
+
+
+.right h3 i{width:30px;
+  height:30px;
+  background:#0f172a;color:#fff;
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  font-size:14px}
+
+
+.right p{font-size:13.5px;
+  color:#475569;
+  line-height:20px}
+
+
+.card{background:lightcyan;
+  border:1px solid black;
+  padding:15px;
+  border-radius:12px;
+  margin-top:10px}
+
+
+.projects{display:flex;gap:10px;
+  margin-top:12px}
+
+
+.proj{flex:1;padding:12px;
+  border-radius:10px;
+  border:1px solid black;
+  cursor:pointer;
+  transition:.3s}
+
+
+.proj.active{border-color:black;
+  background:white}
+
+
+.proj b{font-size:13px} 
+.proj small{font-size:11px;color:#8d3a8e;
+  display:block;
+  margin-top:4px}
+
+
+  .footer-border{
+    /* border-top:2px solid black; */
+    align-items:center;
+    padding:10px;
+    margin-top:70px;
+  }
+
+
+  .icons{
+    display:flex;
+    gap:10px;
+     margin-top:12px ;
+  align-items:center;
+  padding:5px 10px;
+  margin-left: 10pc;
+}
+
+
+ /* @media(max-width:700px)
+{.resume{flex-direction:column}
+.left,.right{width:100%}}  */
+
+
+@media(max-width:768px){.resume{flex-direction:column} .left,.right{width:100%} .pic{margin:0 auto 20px}.pic{width:190px;
+  height:250px;
+  border-radius:50%;
+  overflow:hidden;
+  margin-bottom:20px;
+  border:4px solid #c953c9f0;
+  animation: float 3s ease-in-out infinite, glow 2.5s ease-in-out infinite; transition:.4s}
+}
+@media(max-width:480px){body{padding:0;background:#fff} .resume{border-radius:0;box-shadow:none} .pic{width:140px;height:140px}}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="resume">
+  <div class="left">
+    <div class="pic"><img src="me2.png" alt="photo"></div>
+   <div class="name "> <h2>PREM KUMAR</h2></div>
+    <div class="role">FRESHER</div>
+    <div class="contact">
+
+      <div class="info"><a href="https://www.google.com/maps/place/Sri+Venkateshwara+Pg+For+Gents/@12.9503892,77.7004724,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae139da595da4f:0x16e22b54574a1183!8m2!3d12.9503892!4d77.7030473!16s%2Fg%2F11h51cmz3r?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-pin"></i></a> Address</div>
+      <div class="info"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i></a> Email</div>
+      <div class="info"><i class="fas fa-phone-square"></i> 9398213608</div>
+      <div class="info"><a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a> Linkdin</div>
+     <div class="info"><a href="https://github.com/magiiii030-star"><i class="fab fa-github"></i></a>GitHub</div>
+
+    </div>
+    
+
+    <div class="skills-left">
+      <h4>SKILLS</h4>
+
+      <small>Python, JS, HTML, CSS</small><div class="skill-bar"><div class="skill-fill w90"></div></div>
+      <small>Django & React & Bootstrap</small><div class="skill-bar"><div class="skill-fill w85"></div></div>
+      <small>My SQL</small><div class="skill-bar"><div class="skill-fill w80"></div></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <span class="tag">CARRIER OBJECTIVE</span>
+    <p style="margin-top:12px">Motivated and enthusiastic B.Com (Computer Applications) graduate seeking an entry-level opportunity in IT Support or Web Development.
+           Possess basic knowledge of HTML, CSS, and Python, with a willingness to learn new technologies, solve technical problems, and contribute to organizational growth. 
+           Looking forward to building a successful career in the IT industry.</p>
+    
+    <h3><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+    <div class="card">
+      <b style="font-size:13px">Vedavyasa Degree College, Puttur(AP)</b><br>
+      <small style="color:#64748b">Bachelor of Commerce (Computer Applications - B.Com CA)<br>Graduation: [2026]<br></small>
+    </div>
+
+    <h3><i class="fas fa-code"></i> TECHNICAL SKILLS</h3>
+    <div class="card" style="font-size:13px">
+      • <b>HTML:</b> Basic web page development<br>
+      • <b>CSS:</b> Web page styling and layouts<br>
+      • <b>Python:</b> Basic programming concepts<br>
+      • <b>GIT and GITHUB:</b> Version control and project management basics<br>
+    </div>
+
+
+    <h3><i class="fas fa-laptop-code"></i> PROJECTS</h3>
+    <div class="projects">
+
+
+       <div class="proj active" onclick="showP('p1',this)"><b><a href="file:///C:/Users/magii/OneDrive/Desktop/portfolio%20project/proj%201.html"> project 1</a></b><small>MODERN LOGIN</small></div>
+      <div class="proj" onclick="showP('p2',this)"><b><a href="file:///C:/Users/magii/OneDrive/Desktop/portfolio%20project/proj2.html">project 2</a></b><small>FOOD MENU</small></div>
+
+    </div>
+
+    <div class="footer-border"> 
+     <p>© <span id="year"></span> My Website. All Rights Reserved. | Built with HTML, CSS & JavaScript.</p>
+     <div class="icons">
+      <a href="https://www.google.com/maps/@12.9614549,77.7108679,15z?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-pin"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/magiiii030-star"><i class="fab fa-github"></i></a>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
+
+
+
+    
+
+</body>
+</html>
